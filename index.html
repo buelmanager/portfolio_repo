@@ -5,338 +5,503 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원철희 | Mobile & Kiosk Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">PORTFOLIO<span>2025</span></a>
+            <a href="#" class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">CW</span>
+                <span class="logo-bracket">]</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="active"><span class="nav-number">01</span>Home</a></li>
+                <li><a href="#about"><span class="nav-number">02</span>About</a></li>
+                <li><a href="#experience"><span class="nav-number">03</span>Experience</a></li>
+                <li><a href="#projects"><span class="nav-number">04</span>Projects</a></li>
+                <li><a href="#contact"><span class="nav-number">05</span>Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-right">
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80" alt="Coding workspace">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-left">
-                <span class="page-number">01</span>
+        <div class="hero-grid">
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-frame">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=80" alt="Coding workspace">
+                        <div class="image-grain"></div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <span class="badge-number">17+</span>
+                        <span class="badge-text">Years</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="badge-number">40+</span>
+                        <span class="badge-text">Apps</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-right">
-                <p class="hero-subtitle">MOBILE & KIOSK DEVELOPER</p>
-                <h1 class="hero-name">원철희</h1>
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">MOBILE & KIOSK DEVELOPER</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="word">원</span>
+                        <span class="word">철</span>
+                        <span class="word">희</span>
+                    </span>
+                </h1>
                 <p class="hero-description">
-                    Flutter, Kotlin, Android 전문 개발자. 17년간 교육용 모바일 앱과 키오스크 시스템을 개발하며 레거시 시스템의 현대화와 안정적인 서비스 운영에 기여해왔습니다. 최근에는 AI 코딩 어시스턴트인 Claude Code를 활용하여 복잡한 아이디어를 빠르게 프로토타이핑하고 있습니다.
+                    Flutter, Kotlin, Android 전문 개발자.<br>
+                    17년간 교육용 모바일 앱과 키오스크 시스템을 개발하며<br>
+                    레거시 시스템의 현대화와 안정적인 서비스 운영에 기여.
                 </p>
                 <div class="hero-highlights">
-                    <p class="highlight-title">HIGHLIGHTS</p>
-                    <ul>
-                        <li>웅진씽크빅 9년 재직, 교육앱 40개+ 개발/운영</li>
-                        <li>Flash AIR → Flutter 마이그레이션 리드</li>
-                        <li>Claude Code와 함께 언어/플랫폼 제약 없이 개발 중</li>
-                    </ul>
+                    <div class="highlight-item">
+                        <span class="highlight-icon"><i class="fas fa-building"></i></span>
+                        <span class="highlight-text">웅진씽크빅 9년</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon"><i class="fas fa-sync-alt"></i></span>
+                        <span class="highlight-text">Flash → Flutter</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon"><i class="fas fa-robot"></i></span>
+                        <span class="highlight-text">Claude Code</span>
+                    </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-                    <a href="#contact" class="btn btn-text">연락하기 <i class="fas fa-arrow-right"></i></a>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-text">View Projects</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span class="btn-text">Contact</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="hero-footer">
-            <span class="footer-left">PORTFOLIO 2025</span>
-            <span class="footer-center">Mobile Developer <span class="divider">——</span> 17+ Years</span>
-            <span class="footer-right">02</span>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <span class="scroll-line"></span>
         </div>
+        <div class="hero-bg-text">DEVELOPER</div>
     </section>
+
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>FLUTTER</span>
+                <span class="marquee-dot"></span>
+                <span>KOTLIN</span>
+                <span class="marquee-dot"></span>
+                <span>ANDROID</span>
+                <span class="marquee-dot"></span>
+                <span>iOS</span>
+                <span class="marquee-dot"></span>
+                <span>MOBILE APP</span>
+                <span class="marquee-dot"></span>
+                <span>KIOSK</span>
+                <span class="marquee-dot"></span>
+                <span>FLUTTER</span>
+                <span class="marquee-dot"></span>
+                <span>KOTLIN</span>
+                <span class="marquee-dot"></span>
+                <span>ANDROID</span>
+                <span class="marquee-dot"></span>
+                <span>iOS</span>
+                <span class="marquee-dot"></span>
+                <span>MOBILE APP</span>
+                <span class="marquee-dot"></span>
+                <span>KIOSK</span>
+                <span class="marquee-dot"></span>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">ABOUT</span>
-                <h2 class="section-title">ABOUT</h2>
-            </div>
-            <div class="about-content">
-                <p class="about-intro">
-                    Android, Kotlin, Flutter의 기술을 보유하고 있습니다. 웅진씽크빅에서 임시직/프리랜서로 근무하며 Flutter Project와 Android Native Project를 담당했습니다. Flash/AIR 레거시 시스템부터 Flutter, Kotlin까지 다양한 기술 스택으로 모바일 신규 앱개발을 하였고, Flash/AIR 프로젝트를 Flutter로 재개발을 하면서 유지 보수 효율성 개선을 하였습니다. 또한 장기간 교육용 앱서비스를 안정적으로 운영하였습니다. 현재는 Claude Code를 활용하여 웹, 앱, 키오스크 등 다양한 프로젝트를 개발하고 있습니다.
-                </p>
-
-                <div class="competencies">
-                    <h3 class="competencies-title">CORE COMPETENCIES</h3>
-                    <ul class="competencies-list">
-                        <li>RESTful API 연동 및 Firebase 활용 경험</li>
-                        <li>Flutter/Dart 상태관리 및 클린아키텍처 및 디자인 패턴에 대한 이해</li>
-                        <li>Android Native/Java/Kotlin에 대한 경험</li>
-                        <li>iOS/Android AppStore/PlayStore 배포 경험</li>
-                    </ul>
-                </div>
-
-                <div class="contact-info-grid">
-                    <div class="contact-info-item">
-                        <span class="info-label">EMAIL</span>
-                        <span class="info-value">buelmanager@gmail.com</span>
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="section-tag">
+                        <span class="tag-number">02</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-text">ABOUT ME</span>
                     </div>
-                    <div class="contact-info-item">
-                        <span class="info-label">PHONE</span>
-                        <span class="info-value">010-6557-7258</span>
+                    <h2 class="section-title">
+                        <span class="title-stroke">Building</span>
+                        <span class="title-fill">Digital</span>
+                        <span class="title-fill">Experiences</span>
+                    </h2>
+                </div>
+                <div class="about-right">
+                    <p class="about-intro">
+                        Android, Kotlin, Flutter의 기술을 보유하고 있습니다. 웅진씽크빅에서
+                        임시직/프리랜서로 근무하며 Flutter Project와 Android Native Project를
+                        담당했습니다.
+                    </p>
+                    <p class="about-detail">
+                        Flash/AIR 레거시 시스템부터 Flutter, Kotlin까지 다양한 기술 스택으로
+                        모바일 신규 앱개발을 하였고, Flash/AIR 프로젝트를 Flutter로 재개발을
+                        하면서 유지 보수 효율성 개선을 하였습니다. 현재는 Claude Code를 활용하여
+                        웹, 앱, 키오스크 등 다양한 프로젝트를 개발하고 있습니다.
+                    </p>
+
+                    <div class="skills-showcase">
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fab fa-flutter"></i></span>
+                            <span class="pill-text">Flutter</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fab fa-android"></i></span>
+                            <span class="pill-text">Android</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fab fa-apple"></i></span>
+                            <span class="pill-text">iOS</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fas fa-database"></i></span>
+                            <span class="pill-text">Firebase</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fas fa-code"></i></span>
+                            <span class="pill-text">Kotlin</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon"><i class="fas fa-robot"></i></span>
+                            <span class="pill-text">Claude Code</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <span class="card-icon"><i class="fas fa-envelope"></i></span>
+                            <div class="card-content">
+                                <span class="card-label">EMAIL</span>
+                                <span class="card-value">buelmanager@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <span class="card-icon"><i class="fas fa-phone"></i></span>
+                            <div class="card-content">
+                                <span class="card-label">PHONE</span>
+                                <span class="card-value">010-6557-7258</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <span class="section-number">03</span>
+        <div class="section-number">02</div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">CAREER TIMELINE</span>
-                <h2 class="section-title">EXPERIENCE</h2>
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <span class="tag-number">03</span>
+                    <span class="tag-line"></span>
+                    <span class="tag-text">EXPERIENCE</span>
+                </div>
+                <h2 class="section-title-large">Career Timeline</h2>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2015 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>웅진씽크빅</h3>
-                        <p class="timeline-role">Mobile Developer (임시직/프리랜서)</p>
-                        <ul class="timeline-details">
-                            <li>교육용 모바일 앱 40개+ 개발 및 운영</li>
-                            <li>Flash/AIR 레거시 시스템 Flutter 마이그레이션</li>
-                            <li>Android Native 앱 유지보수</li>
+            <div class="timeline-modern">
+                <div class="timeline-item-modern">
+                    <div class="timeline-year">
+                        <span class="year-number">2015</span>
+                        <span class="year-dash">—</span>
+                        <span class="year-number">2024</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3 class="company-name">웅진씽크빅</h3>
+                            <span class="role-badge">Mobile Developer</span>
+                        </div>
+                        <p class="role-type">임시직/프리랜서</p>
+                        <ul class="achievements">
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">교육용 모바일 앱 40개+ 개발 및 운영</span>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">Flash/AIR 레거시 시스템 Flutter 마이그레이션</span>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">Android Native 앱 유지보수</span>
+                            </li>
                         </ul>
+                        <div class="card-tags">
+                            <span>Flutter</span>
+                            <span>Android</span>
+                            <span>Kotlin</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2008 - 2015</div>
-                    <div class="timeline-content">
-                        <h3>프리랜서</h3>
-                        <p class="timeline-role">Flash/ActionScript Developer</p>
-                        <ul class="timeline-details">
-                            <li>교육용 콘텐츠 개발</li>
-                            <li>키오스크 시스템 개발</li>
-                            <li>인터랙티브 미디어 제작</li>
+
+                <div class="timeline-item-modern">
+                    <div class="timeline-year">
+                        <span class="year-number">2008</span>
+                        <span class="year-dash">—</span>
+                        <span class="year-number">2015</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3 class="company-name">프리랜서</h3>
+                            <span class="role-badge">Flash Developer</span>
+                        </div>
+                        <p class="role-type">Flash/ActionScript Developer</p>
+                        <ul class="achievements">
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">교육용 콘텐츠 개발</span>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">키오스크 시스템 개발</span>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-check"></i></span>
+                                <span class="achievement-text">인터랙티브 미디어 제작</span>
+                            </li>
                         </ul>
+                        <div class="card-tags">
+                            <span>Flash</span>
+                            <span>ActionScript</span>
+                            <span>Interactive Media</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <span class="section-number">04</span>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">TECH STACK</span>
-                <h2 class="section-title">SKILLS</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Mobile Development">
-                    </div>
-                    <h3>Mobile</h3>
-                    <div class="skill-tags">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Kotlin</span>
-                        <span>Android</span>
-                        <span>iOS</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="Backend Development">
-                    </div>
-                    <h3>Backend & Database</h3>
-                    <div class="skill-tags">
-                        <span>Firebase</span>
-                        <span>REST API</span>
-                        <span>Node.js</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-image">
-                        <img src="https://images.unsplash.com/photo-1522542550221-31fd8575f531?w=600&q=80" alt="Tools">
-                    </div>
-                    <h3>Tools & Others</h3>
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>Claude Code</span>
-                        <span>Figma</span>
-                        <span>Jira</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <span class="section-number">05</span>
+        <div class="section-number">03</div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">PORTFOLIO</span>
-                <h2 class="section-title">PROJECTS</h2>
+            <div class="section-header-center">
+                <div class="section-tag">
+                    <span class="tag-number">04</span>
+                    <span class="tag-line"></span>
+                    <span class="tag-text">PORTFOLIO</span>
+                </div>
+                <h2 class="section-title-large">Featured Work</h2>
             </div>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" alt="Education App">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+            <div class="projects-showcase">
+                <article class="project-item project-featured">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80" alt="Education App">
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">01</div>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">MOBILE APP</span>
-                        <h3>교육용 학습 앱</h3>
-                        <p>Flutter 기반 K-12 대상 교육 콘텐츠 앱. 40개+ 앱 개발 및 운영</p>
-                        <div class="project-tags">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="meta-category">MOBILE APP</span>
+                            <span class="meta-year">2015-2024</span>
+                        </div>
+                        <h3 class="project-title">교육용 학습 앱</h3>
+                        <p class="project-description">
+                            Flutter 기반 K-12 대상 교육 콘텐츠 앱. 40개 이상의 앱 개발 및 운영을 담당하며
+                            수백만 사용자에게 서비스 제공.
+                        </p>
+                        <div class="project-tech">
                             <span>Flutter</span>
                             <span>Firebase</span>
                             <span>REST API</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
+                <article class="project-item">
+                    <div class="project-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Kiosk System">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">02</div>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">KIOSK</span>
-                        <h3>키오스크 시스템</h3>
-                        <p>터치 기반 인터랙티브 키오스크 애플리케이션 개발</p>
-                        <div class="project-tags">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="meta-category">KIOSK</span>
+                        </div>
+                        <h3 class="project-title">키오스크 시스템</h3>
+                        <p class="project-description">
+                            터치 기반 인터랙티브 키오스크 애플리케이션 개발
+                        </p>
+                        <div class="project-tech">
                             <span>Flutter</span>
                             <span>Kotlin</span>
-                            <span>Hardware Integration</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
+                <article class="project-item">
+                    <div class="project-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="Migration Project">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">03</div>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">MIGRATION</span>
-                        <h3>Flash → Flutter 마이그레이션</h3>
-                        <p>레거시 Flash/AIR 애플리케이션을 Flutter로 현대화</p>
-                        <div class="project-tags">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="meta-category">MIGRATION</span>
+                        </div>
+                        <h3 class="project-title">Flash → Flutter</h3>
+                        <p class="project-description">
+                            레거시 Flash/AIR 애플리케이션을 Flutter로 현대화
+                        </p>
+                        <div class="project-tech">
                             <span>Flutter</span>
                             <span>Legacy Migration</span>
-                            <span>Performance</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
+                <article class="project-item">
+                    <div class="project-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Android Native">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <div class="project-image-overlay"></div>
+                        <div class="project-number">04</div>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">ANDROID NATIVE</span>
-                        <h3>Android 네이티브 앱</h3>
-                        <p>Kotlin/Java 기반 Android 네이티브 애플리케이션 개발</p>
-                        <div class="project-tags">
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="meta-category">ANDROID NATIVE</span>
+                        </div>
+                        <h3 class="project-title">Android 네이티브 앱</h3>
+                        <p class="project-description">
+                            Kotlin/Java 기반 Android 네이티브 애플리케이션 개발
+                        </p>
+                        <div class="project-tech">
                             <span>Kotlin</span>
                             <span>Java</span>
-                            <span>Android SDK</span>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-        <span class="section-number">06</span>
+        <div class="section-number">04</div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="contact-background">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Office workspace">
-        </div>
-        <div class="contact-overlay"></div>
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-left">
-                    <span class="section-label">CONTACT</span>
-                    <h2 class="contact-title">CONTACT</h2>
-                    <p class="contact-description">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <div class="section-tag light">
+                        <span class="tag-number">05</span>
+                        <span class="tag-line"></span>
+                        <span class="tag-text">CONTACT</span>
+                    </div>
+                    <h2 class="contact-title">
+                        <span class="title-line">Let's Work</span>
+                        <span class="title-line title-gradient">Together</span>
+                    </h2>
+                    <p class="contact-subtitle">
                         프로젝트 협업이나 채용 관련 문의를 환영합니다.<br>
                         편하게 연락 주세요.
                     </p>
                 </div>
-                <div class="contact-right">
-                    <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <span class="detail-label">EMAIL</span>
-                            <a href="mailto:buelmanager@gmail.com" class="detail-value">buelmanager@gmail.com</a>
+
+                <div class="contact-info-grid">
+                    <a href="mailto:buelmanager@gmail.com" class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-detail-item">
-                            <span class="detail-label">PHONE</span>
-                            <a href="tel:010-6557-7258" class="detail-value">010-6557-7258</a>
+                        <div class="info-card-content">
+                            <span class="info-card-label">Email</span>
+                            <span class="info-card-value">buelmanager@gmail.com</span>
                         </div>
-                        <div class="contact-detail-item">
-                            <span class="detail-label">LOCATION</span>
-                            <span class="detail-value">Seoul, South Korea</span>
+                        <span class="info-card-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="tel:010-6557-7258" class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-card-label">Phone</span>
+                            <span class="info-card-value">010-6557-7258</span>
+                        </div>
+                        <span class="info-card-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <div class="contact-info-card">
+                        <div class="info-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <span class="info-card-label">Location</span>
+                            <span class="info-card-value">Seoul, South Korea</span>
                         </div>
                     </div>
-                    <div class="contact-socials">
-                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://github.com" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <span class="section-number light">07</span>
+        <div class="contact-bg-text">CONTACT</div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <span class="footer-logo">PORTFOLIO 2025</span>
-                <p>&copy; 2025 원철희. All Rights Reserved.</p>
+                <div class="footer-left">
+                    <span class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">CW</span>
+                        <span class="logo-bracket">]</span>
+                    </span>
+                    <p class="footer-copyright">&copy; 2025 원철희. All Rights Reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <span class="footer-credit">Designed & Built with passion</span>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+        <span class="btt-line"></span>
+        <span class="btt-text">TOP</span>
     </button>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
 
     <script src="script.js"></script>
 </body>
