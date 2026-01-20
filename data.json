@@ -1,0 +1,147 @@
+{
+  "profile": {
+    "name": "원철희",
+    "nameEn": "Chulhee Won",
+    "logo": "CW",
+    "title": "MOBILE & KIOSK DEVELOPER",
+    "description": "Flutter, Kotlin, Android 전문 개발자.<br>17년간 교육용 모바일 앱과 키오스크 시스템을 개발하며<br>레거시 시스템의 현대화와 안정적인 서비스 운영에 기여.",
+    "heroImage": "images/hero/profile.jpg",
+    "bgText": "DEVELOPER"
+  },
+
+  "contact": {
+    "email": "buelmanager@gmail.com",
+    "phone": "010-6557-7258",
+    "location": "Seoul, South Korea"
+  },
+
+  "socials": [
+    { "icon": "fab fa-github", "url": "https://github.com", "label": "GitHub" },
+    { "icon": "fab fa-linkedin-in", "url": "https://linkedin.com", "label": "LinkedIn" }
+  ],
+
+  "navigation": [
+    { "id": "home", "label": "Home" },
+    { "id": "about", "label": "About" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "projects", "label": "Projects" },
+    { "id": "contact", "label": "Contact" }
+  ],
+
+  "badges": [
+    { "number": "17+", "text": "Years" },
+    { "number": "40+", "text": "Apps" }
+  ],
+
+  "highlights": [
+    { "icon": "fas fa-building", "text": "웅진씽크빅 9년" },
+    { "icon": "fas fa-sync-alt", "text": "Flash → Flutter" },
+    { "icon": "fas fa-robot", "text": "Claude Code" }
+  ],
+
+  "marquee": ["FLUTTER", "KOTLIN", "ANDROID", "iOS", "MOBILE APP", "KIOSK"],
+
+  "about": {
+    "sectionTitle": {
+      "stroke": "Building",
+      "fill": ["Digital", "Experiences"]
+    },
+    "intro": "Android, Kotlin, Flutter의 기술을 보유하고 있습니다. 웅진씽크빅에서 임시직/프리랜서로 근무하며 Flutter Project와 Android Native Project를 담당했습니다.",
+    "detail": "Flash/AIR 레거시 시스템부터 Flutter, Kotlin까지 다양한 기술 스택으로 모바일 신규 앱개발을 하였고, Flash/AIR 프로젝트를 Flutter로 재개발을 하면서 유지 보수 효율성 개선을 하였습니다. 현재는 Claude Code를 활용하여 웹, 앱, 키오스크 등 다양한 프로젝트를 개발하고 있습니다."
+  },
+
+  "skills": [
+    { "icon": "fab fa-flutter", "name": "Flutter" },
+    { "icon": "fab fa-android", "name": "Android" },
+    { "icon": "fab fa-apple", "name": "iOS" },
+    { "icon": "fas fa-database", "name": "Firebase" },
+    { "icon": "fas fa-code", "name": "Kotlin" },
+    { "icon": "fas fa-robot", "name": "Claude Code" }
+  ],
+
+  "experiences": [
+    {
+      "startYear": "2015",
+      "endYear": "2025",
+      "company": "웅진씽크빅",
+      "role": "Mobile Developer",
+      "type": "임시직/프리랜서",
+      "achievements": [
+        "교육용 모바일 앱 40개+ 개발 및 운영",
+        "Flash/AIR 레거시 시스템 Flutter 마이그레이션",
+        "Android Native 앱 유지보수"
+      ],
+      "tags": ["Flutter", "Android", "Kotlin"]
+    },
+    {
+      "startYear": "2008",
+      "endYear": "2015",
+      "company": "프리랜서",
+      "role": "Flash Developer",
+      "type": "Flash/ActionScript Developer",
+      "achievements": [
+        "교육용 콘텐츠 개발",
+        "키오스크 시스템 개발",
+        "인터랙티브 미디어 제작"
+      ],
+      "tags": ["Flash", "ActionScript", "Interactive Media"]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "교육용 학습 앱",
+      "category": "MOBILE APP",
+      "year": "2015-2024",
+      "description": "Flutter 기반 K-12 대상 교육 콘텐츠 앱. 40개 이상의 앱 개발 및 운영을 담당하며 수백만 사용자에게 서비스 제공.",
+      "images": [
+        "images/projects/education/edu-1.jpg",
+        "images/projects/education/edu-2.jpg",
+        "images/projects/education/edu-3.jpg"
+      ],
+      "tech": ["Flutter", "Firebase", "REST API"],
+      "featured": true
+    },
+    {
+      "title": "키오스크 시스템",
+      "category": "KIOSK",
+      "year": "",
+      "description": "터치 기반 인터랙티브 키오스크 애플리케이션 개발",
+      "images": [
+        "images/projects/kiosk/kiosk-1.jpg",
+        "images/projects/kiosk/kiosk-2.jpg"
+      ],
+      "tech": ["Flutter", "Kotlin"],
+      "featured": false
+    },
+    {
+      "title": "Flash → Flutter",
+      "category": "MIGRATION",
+      "year": "",
+      "description": "레거시 Flash/AIR 애플리케이션을 Flutter로 현대화",
+      "images": [
+        "images/projects/migration/migration-1.jpg",
+        "images/projects/migration/migration-2.jpg"
+      ],
+      "tech": ["Flutter", "Legacy Migration"],
+      "featured": false
+    },
+    {
+      "title": "Android 네이티브 앱",
+      "category": "ANDROID NATIVE",
+      "year": "",
+      "description": "Kotlin/Java 기반 Android 네이티브 애플리케이션 개발",
+      "images": [
+        "images/projects/android/android-1.jpg",
+        "images/projects/android/android-2.jpg"
+      ],
+      "tech": ["Kotlin", "Java"],
+      "featured": false
+    }
+  ],
+
+  "footer": {
+    "copyright": "© 2025 원철희. All Rights Reserved.",
+    "credit": "Designed & Built with passion"
+  }
+}

@@ -1827,6 +1827,140 @@ button {
 }
 
 /* ========================================
+   Project Image Slider
+======================================== */
+.project-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider-slide.active {
+    opacity: 1;
+}
+
+.slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(45, 38, 34, 0.1);
+    border-radius: 50%;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.project-image-wrapper:hover .slider-btn {
+    opacity: 1;
+}
+
+.slider-btn:hover {
+    background: var(--brown);
+    color: var(--text-light);
+    border-color: var(--brown);
+}
+
+.slider-prev {
+    left: 16px;
+}
+
+.slider-next {
+    right: 16px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slider-dot.active {
+    background: var(--gold);
+    transform: scale(1.2);
+}
+
+.slider-dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.slider-dot.active:hover {
+    background: var(--gold);
+}
+
+/* Slider responsive */
+@media (max-width: 768px) {
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+
+    .slider-prev {
+        left: 8px;
+    }
+
+    .slider-next {
+        right: 8px;
+    }
+
+    .slider-dots {
+        bottom: 12px;
+    }
+
+    .slider-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* ========================================
    Reduced Motion
 ======================================== */
 @media (prefers-reduced-motion: reduce) {

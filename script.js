@@ -31,19 +31,21 @@ function animateCursor() {
 
 animateCursor();
 
-// Cursor hover effects
-const interactiveElements = document.querySelectorAll('a, button, .project-item, .skill-pill, .contact-info-card, .timeline-card');
+// Cursor hover effects - will be re-initialized after render
+function initCursorHover() {
+    const interactiveElements = document.querySelectorAll('a, button, .project-item, .skill-pill, .contact-info-card, .timeline-card, .slider-btn, .slider-dot');
 
-interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-        cursor.classList.add('hover');
-        cursorFollower.classList.add('hover');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.classList.add('hover');
+            cursorFollower.classList.add('hover');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+            cursorFollower.classList.remove('hover');
+        });
     });
-    el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hover');
-        cursorFollower.classList.remove('hover');
-    });
-});
+}
 
 // ========================================
 // Navigation
@@ -51,7 +53,6 @@ interactiveElements.forEach(el => {
 const navbar = document.querySelector('.navbar');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const navLinksItems = document.querySelectorAll('.nav-links a');
 
 // Scroll effect for navbar
 window.addEventListener('scroll', () => {
@@ -68,34 +69,39 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Close mobile menu when clicking a link
-navLinksItems.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-    });
-});
+// Navigation link handlers - will be re-initialized after render
+function initNavLinks() {
+    const navLinksItems = document.querySelectorAll('.nav-links a');
 
-// Active link on scroll
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-
+    // Close mobile menu when clicking a link
     navLinksItems.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
     });
-});
+
+    // Active link on scroll
+    const sections = document.querySelectorAll('section');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinksItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
 
 // ========================================
 // Scroll Progress Indicator
@@ -133,17 +139,19 @@ function createObserver(elements, className = 'visible', options = {}) {
     return observer;
 }
 
-// Timeline items animation
-const timelineItems = document.querySelectorAll('.timeline-item-modern');
-createObserver(timelineItems);
+function initScrollReveal() {
+    // Timeline items animation
+    const timelineItems = document.querySelectorAll('.timeline-item-modern');
+    if (timelineItems.length) createObserver(timelineItems);
 
-// Project items animation
-const projectItems = document.querySelectorAll('.project-item');
-createObserver(projectItems);
+    // Project items animation
+    const projectItems = document.querySelectorAll('.project-item');
+    if (projectItems.length) createObserver(projectItems);
 
-// Generic data-animate elements
-const animatedElements = document.querySelectorAll('[data-animate]');
-createObserver(animatedElements, 'animated');
+    // Generic data-animate elements
+    const animatedElements = document.querySelectorAll('[data-animate]');
+    if (animatedElements.length) createObserver(animatedElements, 'animated');
+}
 
 // ========================================
 // Stagger Animations
@@ -249,23 +257,25 @@ function initTextSplitAnimation() {
 // ========================================
 // Smooth Scroll for Anchor Links
 // ========================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
 
-        if (target) {
-            const headerOffset = 100;
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            if (target) {
+                const headerOffset = 100;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
-});
+}
 
 // ========================================
 // Back to Top Button
@@ -338,6 +348,9 @@ function initSectionNumbers() {
     const sectionNumbers = document.querySelectorAll('.section-number');
 
     sectionNumbers.forEach(num => {
+        const section = num.closest('section');
+        if (!section) return;
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -351,7 +364,7 @@ function initSectionNumbers() {
         num.style.transform = 'translateY(50px)';
         num.style.transition = 'all 1s cubic-bezier(0.4, 0, 0.2, 1)';
 
-        observer.observe(num.closest('section'));
+        observer.observe(section);
     });
 }
 
@@ -377,12 +390,12 @@ function initMarquee() {
 // Scroll-based Section Background
 // ========================================
 function initScrollBackground() {
+    const sections = document.querySelectorAll('section');
     let ticking = false;
 
     window.addEventListener('scroll', () => {
         if (!ticking) {
             requestAnimationFrame(() => {
-                const scrolled = window.pageYOffset;
                 const windowHeight = window.innerHeight;
 
                 sections.forEach(section => {
@@ -410,20 +423,9 @@ function initScrollBackground() {
 }
 
 // ========================================
-// Initialize Everything
+// Hero Elements Initial Reveal
 // ========================================
-document.addEventListener('DOMContentLoaded', () => {
-    initStaggerAnimations();
-    initParallax();
-    initMagneticButtons();
-    initTextSplitAnimation();
-    initProjectTilt();
-    initFloatingBadges();
-    initSectionNumbers();
-    initMarquee();
-    initScrollBackground();
-
-    // Initial reveal for hero elements
+function initHeroReveal() {
     setTimeout(() => {
         const heroElements = document.querySelectorAll('.hero-tag, .hero-description, .hero-highlights, .hero-actions');
         heroElements.forEach((el, index) => {
@@ -437,9 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 600 + index * 200);
         });
     }, 100);
-
-    console.log('%c Portfolio Loaded! ', 'background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px;');
-});
+}
 
 // ========================================
 // Performance Optimization
@@ -492,5 +492,28 @@ function initLazyLoad() {
     images.forEach(img => imageObserver.observe(img));
 }
 
-// Initialize lazy loading
-initLazyLoad();
+// ========================================
+// Initialize Everything After Render
+// ========================================
+function initAll() {
+    initCursorHover();
+    initNavLinks();
+    initScrollReveal();
+    initStaggerAnimations();
+    initParallax();
+    initMagneticButtons();
+    initTextSplitAnimation();
+    initProjectTilt();
+    initFloatingBadges();
+    initSectionNumbers();
+    initMarquee();
+    initScrollBackground();
+    initHeroReveal();
+    initLazyLoad();
+    initSmoothScroll();
+
+    console.log('%c Portfolio Loaded! ', 'background: linear-gradient(135deg, #8b6914, #a67c00); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px;');
+}
+
+// Wait for portfolio to be rendered before initializing
+window.addEventListener('portfolioRendered', initAll);
