@@ -28,10 +28,7 @@
     { "id": "contact", "label": "Contact" }
   ],
 
-  "badges": [
-    { "number": "17+", "text": "Years" },
-    { "number": "40+", "text": "Apps" }
-  ],
+  "badges": [],
 
   "highlights": [
     { "icon": "fab fa-android", "text": "Android(Java/Kotlin)" },
@@ -70,7 +67,7 @@
         "role": "Full-stack Developer",
         "type": "Full-stack Developer",
         "achievements": [
-          "Claude & MCP & Firebase 를 활용한 풀스텍 개발",
+          "Claude Code & MCP & Firebase 를 활용한 풀스텍 개발",
           "Android/iOS Mobile, PWA(web/app) 개발",
           "Kiosk 개발"
         ],
@@ -90,7 +87,7 @@
       "tags": ["Flutter", "Android", "Kotlin"]
     },
     {
-      "startYear": "20010.1",
+      "startYear": "2010.1",
       "endYear": "2016.9",
       "company": "프리랜서",
       "role": "Flash Developer",
@@ -99,6 +96,17 @@
         "교육용 콘텐츠 개발",
         "키오스크 시스템 개발",
         "인터랙티브 미디어 제작"
+      ],
+      "tags": ["Flash", "ActionScript", "Interactive Media"]
+    },
+    {
+      "startYear": "2008.1",
+      "endYear": "2010.1",
+      "company": "(주)노스",
+      "role": "Flash Developer",
+      "type": "Flash/ActionScript Developer",
+      "achievements": [
+        "교육용 콘텐츠 개발"
       ],
       "tags": ["Flash", "ActionScript", "Interactive Media"]
     }
@@ -136,81 +144,7 @@
       ],
       "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
       "featured": true
-    },
-    {
-      "title": "Academy 반응형 홈페이지/어드민 챗봇",
-      "category": "PWA",
-      "year": "2026.1",
-      "duration": "5일",
-      "github": "https://github.com/buelmanager/aniwith_homepage_sample.git",
-      "description": "Claude Code를 사용하여 기획/디자인, Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
-      "images": [
-          "images/projects/homepage/home1/home_0.png",
-          "images/projects/homepage/home1/home_1.png",
-          "images/projects/homepage/home1/home_2.png",
-          "images/projects/homepage/home1/home_3.png",
-          "images/projects/homepage/home1/home_4.png",
-          "images/projects/homepage/home1/home_5.png",
-          "images/projects/homepage/home1/home_6.png",
-          "images/projects/homepage/home1/home_7.png",
-          "images/projects/homepage/home1/home_8.png",
-          "images/projects/homepage/home1/home_9.png",
-          "images/projects/homepage/home1/home_10.png",
-          "images/projects/homepage/home1/home_11.png",
-          "images/projects/homepage/home1/home_12.png",
-          "images/projects/homepage/home1/home_13.png",
-          "images/projects/homepage/home1/home_14.png",
-          "images/projects/homepage/home1/home_15.png",
-          "images/projects/homepage/home1/home_17.png",
-          "images/projects/homepage/home1/home_18.png",
-          "images/projects/homepage/home1/home_16.png",
-          "images/projects/homepage/home1/home_19.png"
-      ],
-      "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
-      "featured": true
-    },
-    {
-      "title": "키오스크 시스템",
-      "category": "KIOSK",
-      "year": "",
-      "duration": "",
-      "github": "",
-      "description": "터치 기반 인터랙티브 키오스크 애플리케이션 개발",
-      "images": [
-        "images/projects/kiosk/kiosk-1.jpg",
-        "images/projects/kiosk/kiosk-2.jpg"
-      ],
-      "tech": ["Flutter", "Kotlin"],
-      "featured": false
-    },
-    {
-      "title": "Flash → Flutter",
-      "category": "MIGRATION",
-      "year": "",
-      "duration": "",
-      "github": "",
-      "description": "레거시 Flash/AIR 애플리케이션을 Flutter로 현대화",
-      "images": [
-        "images/projects/migration/migration-1.jpg",
-        "images/projects/migration/migration-2.jpg"
-      ],
-      "tech": ["Flutter", "Legacy Migration"],
-      "featured": false
-    },
-    {
-      "title": "Android 네이티브 앱",
-      "category": "ANDROID NATIVE",
-      "year": "",
-      "duration": "",
-      "github": "",
-      "description": "Kotlin/Java 기반 Android 네이티브 애플리케이션 개발",
-      "images": [
-        "images/projects/android/android-1.jpg",
-        "images/projects/android/android-2.jpg"
-      ],
-      "tech": ["Kotlin", "Java"],
-      "featured": false
-    }
+    } 
   ],
 
   "footer": {
