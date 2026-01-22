@@ -1504,8 +1504,151 @@ button {
 ======================================== */
 .footer {
     background: var(--brown);
-    padding: 40px 0;
+    padding: 60px 0 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Development Info Section */
+.footer-dev-info {
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dev-info-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.dev-info-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 16px;
+}
+
+.dev-info-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.dev-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.dev-info-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    transition: var(--transition);
+}
+
+.dev-info-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.dev-card-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(139, 105, 20, 0.2);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.dev-card-icon i {
+    font-size: 1.3rem;
+    color: var(--gold);
+}
+
+.dev-card-content h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.dev-card-content p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dev-info-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.dev-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: var(--gold);
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--brown);
+    transition: var(--transition);
+}
+
+.dev-link:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(139, 105, 20, 0.3);
+}
+
+.dev-link i:first-child {
+    font-size: 1.2rem;
+}
+
+.dev-link i:last-child {
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.dev-link:hover i:last-child {
+    transform: translateX(4px);
+}
+
+.dev-version {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+.version-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.version-number {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold);
 }
 
 .footer .logo-bracket {
@@ -1658,6 +1801,10 @@ button {
 }
 
 @media (max-width: 1024px) {
+    .dev-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -1746,6 +1893,50 @@ button {
         padding: 0 24px;
     }
 
+    /* Footer Dev Info Responsive */
+    .dev-info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .dev-info-card {
+        padding: 20px;
+    }
+
+    .dev-info-header {
+        margin-bottom: 32px;
+    }
+
+    .dev-info-title {
+        font-size: 1.25rem;
+    }
+
+    .dev-info-links {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .dev-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dev-version {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .nav-container {
         padding: 0 24px;
     }
@@ -1777,6 +1968,12 @@ button {
 
     .nav-cta {
         display: none;
+    }
+
+    .nav-github {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
     }
 
     .hamburger {
