@@ -493,6 +493,109 @@ function initLazyLoad() {
 }
 
 // ========================================
+// Image Modal
+// ========================================
+function initImageModal() {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalCounter = document.getElementById('modalCounter');
+    const modalClose = document.getElementById('modalClose');
+    const modalPrev = document.getElementById('modalPrev');
+    const modalNext = document.getElementById('modalNext');
+    const modalOverlay = modal.querySelector('.modal-overlay');
+
+    let currentImages = [];
+    let currentIndex = 0;
+    let currentProjectTitle = '';
+
+    // Open modal when clicking on project image
+    document.addEventListener('click', (e) => {
+        const slide = e.target.closest('.slider-slide');
+        if (slide) {
+            const slider = slide.closest('.project-slider');
+            const projectItem = slide.closest('.project-item');
+            const slides = slider.querySelectorAll('.slider-slide img');
+            const title = projectItem.querySelector('.project-title')?.textContent || '';
+
+            currentImages = Array.from(slides).map(img => img.src);
+            currentIndex = Array.from(slider.querySelectorAll('.slider-slide')).indexOf(slide);
+            currentProjectTitle = title;
+
+            openModal();
+        }
+    });
+
+    function openModal() {
+        updateModalContent();
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function updateModalContent() {
+        modalImage.src = currentImages[currentIndex];
+        modalTitle.textContent = currentProjectTitle;
+        modalCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateModalContent();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateModalContent();
+    }
+
+    // Event listeners
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    modalNext.addEventListener('click', nextImage);
+    modalPrev.addEventListener('click', prevImage);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('active')) return;
+
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    modal.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    modal.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextImage();
+            } else {
+                prevImage();
+            }
+        }
+    }
+}
+
+// ========================================
 // Initialize Everything After Render
 // ========================================
 function initAll() {
@@ -511,6 +614,7 @@ function initAll() {
     initHeroReveal();
     initLazyLoad();
     initSmoothScroll();
+    initImageModal();
 
     console.log('%c Portfolio Loaded! ', 'background: linear-gradient(135deg, #8b6914, #a67c00); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px;');
 }
