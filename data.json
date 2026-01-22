@@ -3,8 +3,8 @@
     "name": "원철희",
     "nameEn": "Chulhee Won",
     "logo": "CW",
-    "title": "MOBILE & KIOSK DEVELOPER",
-    "description": "Flutter, Kotlin, Android 전문 개발자.<br>17년간 교육용 모바일 앱과 키오스크 시스템을 개발하며<br>레거시 시스템의 현대화와 안정적인 서비스 운영에 기여.",
+    "title": "DEVELOPER",
+    "description": "안녕하세요. <br>일 대한 책임감과<br>사람과의 만남을 중요하게 생각합니다.<br><br>변화하는 환경에 따라, <br>스스로 학습하며 발전하고,<br>목표를 만들어 갑니다.",
     "heroImage": "images/hero/profile.jpg",
     "bgText": "DEVELOPER"
   },
@@ -34,48 +34,64 @@
   ],
 
   "highlights": [
-    { "icon": "fas fa-building", "text": "웅진씽크빅 9년" },
-    { "icon": "fas fa-sync-alt", "text": "Flash → Flutter" },
-    { "icon": "fas fa-robot", "text": "Claude Code" }
+    { "icon": "fab fa-android", "text": "Android(Java/Kotlin)" },
+    { "icon": "fab fa-flutter", "text": "Flutter(Dart)" },
+    { "icon": "fas fa-globe", "text": "PWA(Web/App)" },
+    { "icon": "fas fa-robot", "text": "Claude Code + MCP" }
   ],
 
-  "marquee": ["FLUTTER", "KOTLIN", "ANDROID", "iOS", "MOBILE APP", "KIOSK"],
+  "marquee": ["FLUTTER", "KOTLIN", "ANDROID", "iOS", "MOBILE APP", "KIOSK", "PWA", "CLAUDE CODE", "MCP"],
 
   "about": {
     "sectionTitle": {
       "stroke": "Building",
       "fill": ["Digital", "Experiences"]
     },
-    "intro": "Android, Kotlin, Flutter의 기술을 보유하고 있습니다. 웅진씽크빅에서 임시직/프리랜서로 근무하며 Flutter Project와 Android Native Project를 담당했습니다.",
-    "detail": "Flash/AIR 레거시 시스템부터 Flutter, Kotlin까지 다양한 기술 스택으로 모바일 신규 앱개발을 하였고, Flash/AIR 프로젝트를 Flutter로 재개발을 하면서 유지 보수 효율성 개선을 하였습니다. 현재는 Claude Code를 활용하여 웹, 앱, 키오스크 등 다양한 프로젝트를 개발하고 있습니다."
+    "intro": "Claude Code와 MCP를 기반으로 기획,디자인, 프론트, 백앤드 개발 까지 풀스택으로 폭넓게 개발하고 있습니다.",
+    "detail": "초기 Flash (AS3), Android Native(Java, Kotlin), Flutter(Dart)를 기반으로 Android/iOS Mobile App 및 Kiosk 개발 이후 기술 변화에 유연하게 적응하며 꾸준히 역량을 확장해왔습니다."
   },
 
   "skills": [
-    { "icon": "fab fa-flutter", "name": "Flutter" },
-    { "icon": "fab fa-android", "name": "Android" },
-    { "icon": "fab fa-apple", "name": "iOS" },
-    { "icon": "fas fa-database", "name": "Firebase" },
-    { "icon": "fas fa-code", "name": "Kotlin" },
-    { "icon": "fas fa-robot", "name": "Claude Code" }
+    { "icon": "fab fa-flutter", "name": "Flutter/Dart" },
+    { "icon": "fab fa-android", "name": "Android Native" },
+    { "icon": "fas fa-code", "name": "Java/Kotlin" },
+    { "icon": "fas fa-bolt", "name": "Flash/AS3" },
+    { "icon": "fas fa-robot", "name": "Claude Code" },
+    { "icon": "fas fa-network-wired", "name": "MCP" },
+    { "icon": "fas fa-globe", "name": "PWA(Web/App)" },
+    { "icon": "fas fa-desktop", "name": "Kiosk" }
   ],
 
   "experiences": [
+      {
+        "startYear": "2025.8",
+        "endYear": "2026",
+        "company": "프리랜서",
+        "role": "Full-stack Developer",
+        "type": "Full-stack Developer",
+        "achievements": [
+          "Claude & MCP & Firebase 를 활용한 풀스텍 개발",
+          "Android/iOS Mobile, PWA(web/app) 개발",
+          "Kiosk 개발"
+        ],
+        "tags": ["Claude & MCP", "Flutter", "Android", "Kotlin"]
+      },
     {
-      "startYear": "2015",
-      "endYear": "2025",
+      "startYear": "2016.9",
+      "endYear": "2025.8",
       "company": "웅진씽크빅",
       "role": "Mobile Developer",
-      "type": "임시직/프리랜서",
+      "type": "Android (java/Kotlin), Flutter (dart), Flash",
       "achievements": [
-        "교육용 모바일 앱 40개+ 개발 및 운영",
+        "교육용 모바일 앱 개발 및 운영",
         "Flash/AIR 레거시 시스템 Flutter 마이그레이션",
         "Android Native 앱 유지보수"
       ],
       "tags": ["Flutter", "Android", "Kotlin"]
     },
     {
-      "startYear": "2008",
-      "endYear": "2015",
+      "startYear": "20010.1",
+      "endYear": "2016.9",
       "company": "프리랜서",
       "role": "Flash Developer",
       "type": "Flash/ActionScript Developer",
@@ -90,22 +106,75 @@
 
   "projects": [
     {
-      "title": "교육용 학습 앱",
-      "category": "MOBILE APP",
-      "year": "2015-2024",
-      "description": "Flutter 기반 K-12 대상 교육 콘텐츠 앱. 40개 이상의 앱 개발 및 운영을 담당하며 수백만 사용자에게 서비스 제공.",
+      "title": "Academy 반응형 홈페이지/어드민 챗봇",
+      "category": "PWA",
+      "year": "2026.1",
+      "duration": "5일",
+      "github": "https://github.com/buelmanager/aniwith_homepage_sample.git",
+      "description": "Claude Code를 사용하여 기획/디자인, Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
       "images": [
-        "images/projects/education/edu-1.jpg",
-        "images/projects/education/edu-2.jpg",
-        "images/projects/education/edu-3.jpg"
+          "images/projects/homepage/home1/home_0.png",
+          "images/projects/homepage/home1/home_1.png",
+          "images/projects/homepage/home1/home_2.png",
+          "images/projects/homepage/home1/home_3.png",
+          "images/projects/homepage/home1/home_4.png",
+          "images/projects/homepage/home1/home_5.png",
+          "images/projects/homepage/home1/home_6.png",
+          "images/projects/homepage/home1/home_7.png",
+          "images/projects/homepage/home1/home_8.png",
+          "images/projects/homepage/home1/home_9.png",
+          "images/projects/homepage/home1/home_10.png",
+          "images/projects/homepage/home1/home_11.png",
+          "images/projects/homepage/home1/home_12.png",
+          "images/projects/homepage/home1/home_13.png",
+          "images/projects/homepage/home1/home_14.png",
+          "images/projects/homepage/home1/home_15.png",
+          "images/projects/homepage/home1/home_17.png",
+          "images/projects/homepage/home1/home_18.png",
+          "images/projects/homepage/home1/home_16.png",
+          "images/projects/homepage/home1/home_19.png"
       ],
-      "tech": ["Flutter", "Firebase", "REST API"],
+      "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },
+    {
+      "title": "Academy 반응형 홈페이지/어드민 챗봇",
+      "category": "PWA",
+      "year": "2026.1",
+      "duration": "5일",
+      "github": "https://github.com/buelmanager/aniwith_homepage_sample.git",
+      "description": "Claude Code를 사용하여 기획/디자인, Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
+      "images": [
+          "images/projects/homepage/home1/home_0.png",
+          "images/projects/homepage/home1/home_1.png",
+          "images/projects/homepage/home1/home_2.png",
+          "images/projects/homepage/home1/home_3.png",
+          "images/projects/homepage/home1/home_4.png",
+          "images/projects/homepage/home1/home_5.png",
+          "images/projects/homepage/home1/home_6.png",
+          "images/projects/homepage/home1/home_7.png",
+          "images/projects/homepage/home1/home_8.png",
+          "images/projects/homepage/home1/home_9.png",
+          "images/projects/homepage/home1/home_10.png",
+          "images/projects/homepage/home1/home_11.png",
+          "images/projects/homepage/home1/home_12.png",
+          "images/projects/homepage/home1/home_13.png",
+          "images/projects/homepage/home1/home_14.png",
+          "images/projects/homepage/home1/home_15.png",
+          "images/projects/homepage/home1/home_17.png",
+          "images/projects/homepage/home1/home_18.png",
+          "images/projects/homepage/home1/home_16.png",
+          "images/projects/homepage/home1/home_19.png"
+      ],
+      "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
       "featured": true
     },
     {
       "title": "키오스크 시스템",
       "category": "KIOSK",
       "year": "",
+      "duration": "",
+      "github": "",
       "description": "터치 기반 인터랙티브 키오스크 애플리케이션 개발",
       "images": [
         "images/projects/kiosk/kiosk-1.jpg",
@@ -118,6 +187,8 @@
       "title": "Flash → Flutter",
       "category": "MIGRATION",
       "year": "",
+      "duration": "",
+      "github": "",
       "description": "레거시 Flash/AIR 애플리케이션을 Flutter로 현대화",
       "images": [
         "images/projects/migration/migration-1.jpg",
@@ -130,6 +201,8 @@
       "title": "Android 네이티브 앱",
       "category": "ANDROID NATIVE",
       "year": "",
+      "duration": "",
+      "github": "",
       "description": "Kotlin/Java 기반 Android 네이티브 애플리케이션 개발",
       "images": [
         "images/projects/android/android-1.jpg",

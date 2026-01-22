@@ -275,6 +275,8 @@ class PortfolioRenderer {
                     <div class="project-meta">
                         <span class="meta-category">${project.category}</span>
                         ${project.year ? `<span class="meta-year">${project.year}</span>` : ''}
+                        ${project.duration ? `<span class="meta-duration"><i class="fas fa-clock"></i> 개발기간 : ${project.duration}</span>` : ''}
+                        ${project.github ? `<a href="${project.github}" target="_blank" class="project-github"><i class="fab fa-github"></i> GitHub</a>` : ''}
                     </div>
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-description">${project.description}</p>
