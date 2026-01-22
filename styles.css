@@ -1138,11 +1138,25 @@ button {
     grid-template-columns: 1.5fr 1fr;
 }
 
+/* Portrait (vertical) image projects */
+.project-item.project-portrait {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.project-item.project-portrait:nth-child(even) {
+    grid-template-columns: 1.5fr 1fr;
+}
+
 .project-image-wrapper {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
     aspect-ratio: 16/10;
+}
+
+.project-image-wrapper.portrait {
+    aspect-ratio: 9/16;
+    max-width: 400px;
 }
 
 .project-image-wrapper img {
@@ -1713,6 +1727,11 @@ button {
         order: 2;
     }
 
+    .project-image-wrapper.portrait {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     .contact-info-grid {
         grid-template-columns: 1fr;
     }
@@ -1803,6 +1822,17 @@ button {
 
     .contact-cards {
         grid-template-columns: 1fr;
+    }
+
+    .project-item.project-portrait,
+    .project-item.project-portrait:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image-wrapper.portrait {
+        max-width: 280px;
+        margin: 0 auto;
+        aspect-ratio: 9/16;
     }
 
     .footer-content {

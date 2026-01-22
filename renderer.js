@@ -241,8 +241,8 @@ class PortfolioRenderer {
         // Project items
         const projectsEl = document.getElementById('projects-container');
         projectsEl.innerHTML = projects.map((project, index) => `
-            <article class="project-item ${project.featured ? 'project-featured' : ''}">
-                <div class="project-image-wrapper">
+            <article class="project-item ${project.featured ? 'project-featured' : ''} ${project.orientation === 'portrait' ? 'project-portrait' : ''}">
+                <div class="project-image-wrapper ${project.orientation === 'portrait' ? 'portrait' : ''}">
                     <div class="project-slider" data-slider-id="${index}">
                         <div class="slider-track">
                             ${project.images.map((img, imgIndex) => `

@@ -119,7 +119,7 @@
       "year": "2026.1",
       "duration": "5일",
       "github": "https://github.com/buelmanager/aniwith_homepage_sample.git",
-      "description": "Claude Code를 사용하여 기획/디자인, Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
       "images": [
           "images/projects/homepage/home1/home_0.png",
           "images/projects/homepage/home1/home_1.png",
@@ -144,7 +144,288 @@
       ],
       "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
       "featured": true
-    } 
+    },
+
+    {
+      "title": "반응형 학생관리 PWA(Web/App)",
+      "category": "PWA",
+      "year": "2026.1",
+      "duration": "5일",
+      "github": "https://github.com/buelmanager/ani-check-attendance.git",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>전체 원생관리 / QR Code 출석체크, <br>부모알림 : Fcm 을 활용한 Push 기능 <br>PWA 반응형 웹/앱",
+      "images": [
+          "images/projects/checkmate/check_00.png","images/projects/checkmate/check_01.png","images/projects/checkmate/check_02.png","images/projects/checkmate/check_03.png","images/projects/checkmate/check_04.png","images/projects/checkmate/check_05.png","images/projects/checkmate/check_06.png","images/projects/checkmate/check_07.png","images/projects/checkmate/check_08.png","images/projects/checkmate/check_09.png","images/projects/checkmate/check_10.png","images/projects/checkmate/check_11.png","images/projects/checkmate/check_12.png","images/projects/checkmate/check_13.png","images/projects/checkmate/check_14.png","images/projects/checkmate/check_15.png","images/projects/checkmate/check_16.png","images/projects/checkmate/check_17.png","images/projects/checkmate/check_18.png"
+      ],
+      "tech": ["React", "TypeScript", "Vite" , "React Router DOM" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },{
+      "title": "DENIM & SUPPLY RALPH LAUREN",
+      "category": "Kiosk",
+      "year": "2013.12",
+      "duration": "12주",
+      "github": "",
+      "description": "DENIM & SUPPLY RALPH LAUREN 프로모션 Kiosk",
+      "images": [
+          "images/projects/lf/1.png",  
+          "images/projects/lf/2.png",  
+          "images/projects/lf/3.png",  
+          "images/projects/lf/4.png",  
+          "images/projects/lf/5.png" 
+
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+
+{
+      "title": "Franklin Flow",
+      "category": "Mobile App (iOS/Android)",
+      "year": "2025.9",
+      "duration": "1주",
+      "github": "",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>Franklin Flow 자기 관리앱<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
+      "images": [
+           "images/projects/app/franklin/1.png",
+           "images/projects/app/franklin/2.png",
+           "images/projects/app/franklin/3.png",
+           "images/projects/app/franklin/4.png",
+           "images/projects/app/franklin/5.png",
+           "images/projects/app/franklin/6.png",
+           "images/projects/app/franklin/7.png",
+           "images/projects/app/franklin/8.png"
+
+      ],
+      "orientation": "portrait",
+      "tech": ["Flutter" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },
+
+    {
+      "title": "mango 스스로 단어암기",
+      "category": "Mobile App (iOS/Android)",
+      "year": "2025.9",
+      "duration": "1주",
+      "github": "",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>mango 스스로 단어암기<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
+      "images": [
+           "images/projects/app/mango/1.png",
+           "images/projects/app/mango/2.png",
+           "images/projects/app/mango/3.png",
+           "images/projects/app/mango/4.png",
+           "images/projects/app/mango/5.png",
+           "images/projects/app/mango/6.png",
+           "images/projects/app/mango/7.png",
+           "images/projects/app/mango/8.png",
+           "images/projects/app/mango/9.png"
+
+      ],
+      "orientation": "portrait",
+      "tech": ["Flutter" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },
+{
+      "title": "ferret 용돈 관리앱",
+      "category": "Mobile App (iOS/Android)",
+      "year": "2025.9",
+      "duration": "1주",
+      "github": "",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>ferret 스스로 용돈 관리/가족일정관리<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
+      "images": [
+           "images/projects/app/ferret/1.png",
+           "images/projects/app/ferret/2.png",
+           "images/projects/app/ferret/3.png",
+           "images/projects/app/ferret/4.png",
+           "images/projects/app/ferret/5.png",
+           "images/projects/app/ferret/6.png",
+           "images/projects/app/ferret/7.png",
+           "images/projects/app/ferret/8.png",
+           "images/projects/app/ferret/9.png"
+      ],
+      "orientation": "portrait",
+      "tech": ["Flutter" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },
+    {
+      "title": "dot 할일 관리앱",
+      "category": "Mobile App (iOS/Android)",
+      "year": "2025.9",
+      "duration": "1주",
+      "github": "",
+      "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>ferret 스스로 용돈 관리/가족일정관리<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동 <br> MVVM Pattern , Clean Architecture",
+      "images": [
+           "images/projects/app/dot/1.png",
+           "images/projects/app/dot/2.png",
+           "images/projects/app/dot/3.png",
+           "images/projects/app/dot/4.png",
+           "images/projects/app/dot/5.png",
+           "images/projects/app/dot/6.png",
+           "images/projects/app/dot/7.png",
+           "images/projects/app/dot/8.png",
+           "images/projects/app/dot/9.png"
+      ],
+      "orientation": "portrait",
+      "tech": ["Flutter" ,"Firebase Authentication" ,"Cloud Firestore" ,"Cloud Storage" ,"Firebase Hosting"],
+      "featured": true
+    },
+
+
+    {
+      "title": "우리은행 창구형 Kiosk",
+      "category": "Kiosk",
+      "year": "2012.9",
+      "duration": "16주",
+      "github": "",
+      "description": "우리은행 창구형 Kiosk",
+      "images": [
+           "images/projects/woori/1.png",  
+          "images/projects/woori/2.png",  
+          "images/projects/woori/3.png",  
+          "images/projects/woori/4.png",  
+          "images/projects/woori/5.png",  
+          "images/projects/woori/6.png",  
+          "images/projects/woori/7.png",  
+          "images/projects/woori/8.png",  
+          "images/projects/woori/9.png",  
+          "images/projects/woori/10.png",  
+          "images/projects/woori/11.png"  
+
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    {
+      "title": "KEB 외환은행 Kiosk",
+      "category": "Kiosk",
+      "year": "2013.12",
+      "duration": "12주",
+      "github": "",
+      "description": "KEB 외환은행 Kiosk",
+      "images": [
+          "images/projects/keb/1.png",  
+          "images/projects/keb/2.png",  
+          "images/projects/keb/3.png",  
+          "images/projects/keb/4.png",  
+          "images/projects/keb/5.png",  
+          "images/projects/keb/6.png",  
+          "images/projects/keb/7.png",  
+          "images/projects/keb/8.png",  
+          "images/projects/keb/9.png" 
+
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    {
+      "title": "신재생 에너지 통합 모니터링 시스템 Kiosk",
+      "category": "Kiosk",
+      "year": "2013.9",
+      "duration": "12주",
+      "github": "",
+      "description": "신재생 에너지 통합 모니터링 시스템 Kiosk",
+      "images": [
+          "images/projects/jeju/1.png",  
+          "images/projects/jeju/2.png",  
+          "images/projects/jeju/3.png",  
+          "images/projects/jeju/4.png",  
+          "images/projects/jeju/5.png",  
+          "images/projects/jeju/6.png",  
+          "images/projects/jeju/7.png",  
+          "images/projects/jeju/8.png",  
+          "images/projects/jeju/9.png",  
+          "images/projects/jeju/10.png",  
+          "images/projects/jeju/11.png",  
+          "images/projects/jeju/12.png",  
+          "images/projects/jeju/13.png",  
+          "images/projects/jeju/14.png"  
+
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    {
+      "title": "현대 CIMS Kiosk",
+      "category": "Kiosk",
+      "year": "2013.6",
+      "duration": "12주",
+      "github": "",
+      "description": "현대 Contact-center Insight Management System",
+      "images": [
+          "images/projects/hd/1.png", 
+          "images/projects/hd/2.png", 
+          "images/projects/hd/3.png", 
+          "images/projects/hd/4.png", 
+          "images/projects/hd/5.png", 
+          "images/projects/hd/6.png", 
+          "images/projects/hd/7.png", 
+          "images/projects/hd/8.png", 
+          "images/projects/hd/9.png", 
+          "images/projects/hd/10.png", 
+          "images/projects/hd/11.png" 
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    {
+      "title": "아디다스 프로모션 Kiosk",
+      "category": "Kiosk",
+      "year": "2010.2",
+      "duration": "4주",
+      "github": "",
+      "description": "아디다스 프로모션 Kiosk",
+      "images": [
+          "images/projects/adidas/1.png",
+          "images/projects/adidas/2.png",
+          "images/projects/adidas/3.png",
+          "images/projects/adidas/4.png" 
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    
+    {
+      "title": "hanhwa Solution 프로모션 Kiosk",
+      "category": "Kiosk",
+      "year": "2010.4",
+      "duration": "5주",
+      "github": "",
+      "description": "hanhwa Solution 프로모션 Kiosk",
+      "images": [
+          "images/projects/hanhwa/1.png",
+          "images/projects/hanhwa/2.png",
+          "images/projects/hanhwa/3.png" ,
+          "images/projects/hanhwa/4.png" ,
+          "images/projects/hanhwa/5.png" ,
+          "images/projects/hanhwa/6.png" ,
+          "images/projects/hanhwa/7.png" ,
+          "images/projects/hanhwa/8.png"  
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    },
+    {
+      "title": "IPTV buny deffence Game",
+      "category": "Game",
+      "year": "2010.1",
+      "duration": "4주",
+      "github": "",
+      "description": "Flash 를 활용한 IPTV형 게임",
+      "images": [
+          "images/projects/buny/1.png",
+          "images/projects/buny/2.png",
+          "images/projects/buny/3.png",
+          "images/projects/buny/4.png",
+          "images/projects/buny/5.png",
+          "images/projects/buny/6.png",
+          "images/projects/buny/7.png",
+          "images/projects/buny/8.png",
+          "images/projects/buny/9.png",
+          "images/projects/buny/10.png",
+          "images/projects/buny/11.png",
+           "images/projects/buny/12.png"
+      ],
+      "tech": ["Flash" ,"RESTful"],
+      "featured": true
+    }
   ],
 
   "footer": {
