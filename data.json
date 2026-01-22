@@ -182,7 +182,7 @@
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
       "duration": "1주",
-      "github": "",
+      "github": "https://github.com/buelmanager/franklin_flow.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>Franklin Flow 자기 관리앱<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
       "images": [
            "images/projects/app/franklin/1.png",
@@ -205,7 +205,7 @@
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
       "duration": "1주",
-      "github": "",
+      "github": "https://github.com/buelmanager/automatic_memorization.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>mango 스스로 단어암기<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
       "images": [
            "images/projects/app/mango/1.png",
@@ -250,7 +250,7 @@
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
       "duration": "1주",
-      "github": "",
+      "github": "https://github.com/buelmanager/dot_my_habit.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>ferret 스스로 용돈 관리/가족일정관리<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동 <br> MVVM Pattern , Clean Architecture",
       "images": [
            "images/projects/app/dot/1.png",
