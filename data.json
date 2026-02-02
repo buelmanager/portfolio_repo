@@ -113,11 +113,48 @@
   ],
 
   "projects": [
+      {
+        "title": "EnPeak AI 영어회화 학습 PWA",
+        "category": "PWA",
+        "year": "2026.2",
+        "github": "https://github.com/buelmanager/enpeak.git",
+        "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>AI 기반 영어회화 학습 플랫폼 (Speak 유사)<br>자유 대화 + 14개 시나리오 롤플레이 + 2,661개 단어 학습<br>RAG 시스템 (ChromaDB + 5,375개 청크 인덱싱)<br>Multi-provider LLM (Groq llama-3.1-70b / Mistral 폴백)<br>Web Speech API + Groq Whisper STT/TTS<br>Next.js 프론트엔드 + FastAPI 백엔드<br>Firebase Hosting + HuggingFace Spaces Docker 배포",
+        "images": [
+            "images/projects/enpeak/1.png",
+            "images/projects/enpeak/2.png",
+            "images/projects/enpeak/3.png",
+            "images/projects/enpeak/4.png",
+            "images/projects/enpeak/5.png",
+            "images/projects/enpeak/6.png"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "ChromaDB", "sentence-transformers", "Groq", "Mistral AI", "Firebase", "Docker"],
+        "featured": true
+      },
+      {
+        "title": "RAG 기반 한국 법률 상담 AI 챗봇 서비스",
+        "category": "PWA",
+        "year": "2026.1",
+        "github": "https://github.com/buelmanager/law.git",
+        "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>노동법, 임대차법, 소비자보호법, 교통사고 4개 법률 도메인 지원<br>Hybrid Search (ChromaDB Vector + BM25 키워드 검색)<br>Multi-provider LLM (Mistral AI 우선, Groq 폴백)<br>sentence-transformers 임베딩 (multilingual-e5-base)<br>FastAPI 백엔드 + Next.js 프론트엔드<br>HuggingFace Spaces Docker 배포",
+        "images": [
+            "images/projects/lawbot/1.png",
+            "images/projects/lawbot/2.png",
+            "images/projects/lawbot/3.png",
+            "images/projects/lawbot/5.png",
+            "images/projects/lawbot/6.png",
+            "images/projects/lawbot/7.png",
+            "images/projects/lawbot/8.png",
+            "images/projects/lawbot/9.png",
+            "images/projects/lawbot/10.png",
+            "images/projects/lawbot/11.png"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "ChromaDB", "sentence-transformers", "Mistral AI", "Groq", "Docker"],
+        "featured": true
+      },
     {
       "title": "Academy 반응형 홈페이지/어드민 챗봇",
       "category": "PWA",
       "year": "2026.1",
-      "duration": "5일",
       "github": "https://github.com/buelmanager/aniwith_homepage_sample.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>룰셋 기반의 챗봇, <br>홈페이지 20페이지, 어드민페이지 15페이지 개발 <br>모든 페이지의 모듈요소를 어드민에서 수정가능하도록 설계",
       "images": [
@@ -150,7 +187,6 @@
       "title": "반응형 학생관리 PWA(Web/App)",
       "category": "PWA",
       "year": "2026.1",
-      "duration": "5일",
       "github": "https://github.com/buelmanager/ani-check-attendance.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발, <br>React/Firebase Full-Stack개발, <br>전체 원생관리 / QR Code 출석체크, <br>부모알림 : Fcm 을 활용한 Push 기능 <br>PWA 반응형 웹/앱",
       "images": [
@@ -162,7 +198,6 @@
       "title": "DENIM & SUPPLY RALPH LAUREN",
       "category": "Kiosk",
       "year": "2013.12",
-      "duration": "12주",
       "github": "",
       "description": "DENIM & SUPPLY RALPH LAUREN 프로모션 Kiosk",
       "images": [
@@ -181,7 +216,6 @@
       "title": "Franklin Flow",
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
-      "duration": "1주",
       "github": "https://github.com/buelmanager/franklin_flow.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>Franklin Flow 자기 관리앱<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
       "images": [
@@ -204,7 +238,6 @@
       "title": "mango 스스로 단어암기",
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
-      "duration": "1주",
       "github": "https://github.com/buelmanager/automatic_memorization.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>mango 스스로 단어암기<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
       "images": [
@@ -227,7 +260,6 @@
       "title": "ferret 용돈 관리앱",
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
-      "duration": "1주",
       "github": "",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>ferret 스스로 용돈 관리/가족일정관리<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동<br> MVVM Pattern , Clean Architecture",
       "images": [
@@ -249,7 +281,6 @@
       "title": "dot 할일 관리앱",
       "category": "Mobile App (iOS/Android)",
       "year": "2025.9",
-      "duration": "1주",
       "github": "https://github.com/buelmanager/dot_my_habit.git",
       "description": "Claude Code를 사용하여 기획/디자인 Full-stack으로 개발<br>ferret 스스로 용돈 관리/가족일정관리<br>FCM를 활용한 Push<br>Firebase 인증/데이터베이스 연동 <br> MVVM Pattern , Clean Architecture",
       "images": [
@@ -273,7 +304,6 @@
       "title": "우리은행 창구형 Kiosk",
       "category": "Kiosk",
       "year": "2012.9",
-      "duration": "16주",
       "github": "",
       "description": "우리은행 창구형 Kiosk",
       "images": [
@@ -297,7 +327,6 @@
       "title": "KEB 외환은행 Kiosk",
       "category": "Kiosk",
       "year": "2013.12",
-      "duration": "12주",
       "github": "",
       "description": "KEB 외환은행 Kiosk",
       "images": [
@@ -319,7 +348,6 @@
       "title": "신재생 에너지 통합 모니터링 시스템 Kiosk",
       "category": "Kiosk",
       "year": "2013.9",
-      "duration": "12주",
       "github": "",
       "description": "신재생 에너지 통합 모니터링 시스템 Kiosk",
       "images": [
@@ -346,7 +374,6 @@
       "title": "현대 CIMS Kiosk",
       "category": "Kiosk",
       "year": "2013.6",
-      "duration": "12주",
       "github": "",
       "description": "현대 Contact-center Insight Management System",
       "images": [
@@ -369,7 +396,6 @@
       "title": "아디다스 프로모션 Kiosk",
       "category": "Kiosk",
       "year": "2010.2",
-      "duration": "4주",
       "github": "",
       "description": "아디다스 프로모션 Kiosk",
       "images": [
@@ -386,7 +412,6 @@
       "title": "hanhwa Solution 프로모션 Kiosk",
       "category": "Kiosk",
       "year": "2010.4",
-      "duration": "5주",
       "github": "",
       "description": "hanhwa Solution 프로모션 Kiosk",
       "images": [
@@ -406,7 +431,6 @@
       "title": "IPTV buny deffence Game",
       "category": "Game",
       "year": "2010.1",
-      "duration": "4주",
       "github": "",
       "description": "Flash 를 활용한 IPTV형 게임",
       "images": [
