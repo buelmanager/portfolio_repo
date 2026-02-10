@@ -2420,3 +2420,147 @@ button {
         scroll-behavior: auto;
     }
 }
+
+/* ========================================
+   Portfolio Link Banner
+======================================== */
+.portfolio-link-banner {
+    display: block;
+    margin: 0 auto 4rem;
+    max-width: 900px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: var(--radius-lg);
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.portfolio-link-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: var(--transition-slow);
+}
+
+.portfolio-link-banner:hover::before {
+    left: 100%;
+}
+
+.portfolio-link-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 70px rgba(139, 105, 20, 0.3);
+}
+
+.portfolio-link-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-link-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-link-icon i {
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.portfolio-link-text {
+    flex: 1;
+}
+
+.portfolio-link-text h3 {
+    color: var(--text-light);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    font-family: 'Syne', sans-serif;
+}
+
+.portfolio-link-text p {
+    color: rgba(245, 241, 235, 0.9);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.portfolio-link-arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.portfolio-link-arrow i {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.portfolio-link-banner:hover .portfolio-link-arrow {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+.portfolio-link-banner:hover .portfolio-link-arrow i {
+    transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-link-banner {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-link-content {
+        gap: 1.5rem;
+    }
+
+    .portfolio-link-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .portfolio-link-icon i {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-link-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-link-text p {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-link-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .portfolio-link-arrow i {
+        font-size: 1.2rem;
+    }
+}
