@@ -1,51 +1,3 @@
-// ========================================
-// Custom Cursor
-// ========================================
-const cursor = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
-
-let mouseX = 0, mouseY = 0;
-let cursorX = 0, cursorY = 0;
-let followerX = 0, followerY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animateCursor() {
-    // Main cursor - instant follow
-    cursorX += (mouseX - cursorX) * 0.5;
-    cursorY += (mouseY - cursorY) * 0.5;
-    cursor.style.left = `${cursorX}px`;
-    cursor.style.top = `${cursorY}px`;
-
-    // Follower - smooth follow
-    followerX += (mouseX - followerX) * 0.15;
-    followerY += (mouseY - followerY) * 0.15;
-    cursorFollower.style.left = `${followerX}px`;
-    cursorFollower.style.top = `${followerY}px`;
-
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// Cursor hover effects - will be re-initialized after render
-function initCursorHover() {
-    const interactiveElements = document.querySelectorAll('a, button, .project-item, .skill-pill, .contact-info-card, .timeline-card, .slider-btn, .slider-dot');
-
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.classList.add('hover');
-            cursorFollower.classList.add('hover');
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.classList.remove('hover');
-            cursorFollower.classList.remove('hover');
-        });
-    });
-}
 
 // ========================================
 // Navigation
@@ -599,7 +551,6 @@ function initImageModal() {
 // Initialize Everything After Render
 // ========================================
 function initAll() {
-    initCursorHover();
     initNavLinks();
     initScrollReveal();
     initStaggerAnimations();

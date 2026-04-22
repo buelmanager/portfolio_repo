@@ -67,13 +67,11 @@ body {
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
-    cursor: none;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    cursor: none;
 }
 
 ul {
@@ -110,46 +108,6 @@ button {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
-/* ========================================
-   Custom Cursor
-======================================== */
-.cursor {
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background: var(--accent-primary);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 10001;
-    transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s, background 0.2s;
-    mix-blend-mode: difference;
-}
-
-.cursor-follower {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--accent-primary);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 10000;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, border-color 0.3s, background 0.3s;
-}
-
-.cursor.hover {
-    width: 12px;
-    height: 12px;
-    background: var(--gold);
-}
-
-.cursor-follower.hover {
-    width: 60px;
-    height: 60px;
-    border-color: var(--gold);
-    background: rgba(251, 191, 36, 0.1);
-}
 
 /* ========================================
    Scroll Progress
@@ -165,26 +123,6 @@ button {
     transition: width 0.1s linear;
 }
 
-/* ========================================
-   Custom Cursor - Light theme
-======================================== */
-.cursor {
-    background: var(--brown);
-    mix-blend-mode: normal;
-}
-
-.cursor-follower {
-    border-color: var(--brown);
-}
-
-.cursor.hover {
-    background: var(--gold);
-}
-
-.cursor-follower.hover {
-    border-color: var(--gold);
-    background: rgba(139, 105, 20, 0.1);
-}
 
 /* ========================================
    Navigation
@@ -2041,15 +1979,6 @@ button {
     .footer-left {
         flex-direction: column;
         gap: 12px;
-    }
-
-    .cursor,
-    .cursor-follower {
-        display: none;
-    }
-
-    body {
-        cursor: auto;
     }
 
     a, button {
