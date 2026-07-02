@@ -1,3 +1,7 @@
 .vercel
 .env
 .env.local
+.gstack/
+
+# 민감 파일 (공개 레포에 올리지 않음)
+사업자등록증.pdf

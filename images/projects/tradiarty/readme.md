@@ -1,0 +1,1 @@
+https://tradiary.net/landing 
